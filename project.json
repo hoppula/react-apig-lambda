@@ -1,0 +1,13 @@
+{
+  "name": "react-apig-lambda",
+  "description": "Rendering React with AWS API Gateway and Lambda",
+  "runtime": "nodejs4.3",
+  "handler": "lib.default",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.apex.config.js",
+    "clean": "rm -fr lib"
+  },
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::549001227100:role/lambda_basic_execution"
+}
