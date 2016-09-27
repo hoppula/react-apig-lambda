@@ -9,7 +9,7 @@
     "deploy:s3": "aws s3 cp ./dist/ s3://test.es6.fi/assets/ --recursive",
     "deploy": "npm run deploy:lambda && npm run deploy:s3"
   },
-  "author": "",
+  "author": "Lari Hoppula",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.14.0",
